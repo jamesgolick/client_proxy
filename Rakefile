@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "client_proxy"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Basic ruby proxy class to use around service clients that handles retrying requests and failover.}
+    gem.description = %Q{Basic ruby proxy class to use around service clients that handles retrying requests and failover.}
     gem.email = "jamesgolick@gmail.com"
     gem.homepage = "http://github.com/jamesgolick/client_proxy"
     gem.authors = ["James Golick"]
