@@ -33,6 +33,6 @@ class ClientProxy
     def next_host
       @host_pointer += 1
       @host_pointer  = 0 if @host_pointer == @hosts.length
-      @hosts[@host_pointer]
+      @current_host = @hosts[@host_pointer]
     end
 end
