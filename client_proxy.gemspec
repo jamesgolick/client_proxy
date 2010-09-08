@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{client_proxy}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Golick"]
   s.date = %q{2010-09-08}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Basic ruby proxy class to use around service clients that handles retrying requests and failover.}
   s.email = %q{jamesgolick@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "client_proxy.gemspec",
      "lib/client_proxy.rb",
      "spec/client_proxy_spec.rb",
      "spec/retrying_client_proxy_spec.rb",
@@ -33,7 +34,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Basic ruby proxy class to use around service clients that handles retrying requests and failover.}
   s.test_files = [
     "spec/client_proxy_spec.rb",
      "spec/retrying_client_proxy_spec.rb",
