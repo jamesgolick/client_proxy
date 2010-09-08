@@ -10,7 +10,8 @@ describe "ClientProxy" do
     @client_proxy   = ClientProxy.new(@client_factory,
                                       ["host1:6379", "host2:6379"],
                                       [RuntimeError],
-                                      3)
+                                      3,
+                                      false)
   end
 
   describe "when a request succeeds" do

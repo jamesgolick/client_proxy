@@ -1,10 +1,10 @@
 class ClientProxy
-  def initialize(client_factory, hosts, recoverable_errors, max_retries)
+  def initialize(client_factory, hosts, recoverable_errors, max_retries, randomize_order = true)
     @client_factory     = client_factory
     @hosts              = hosts
     @recoverable_errors = recoverable_errors
     @max_retries        = max_retries
-    @host_pointer       = -1
+    @host_pointer       = randomize_order ? rand(hosts.length) : -1
   end
 
   def method_missing(method, *args, &block)
